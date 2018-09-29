@@ -44,3 +44,6 @@
   transform: translate(-50%, 0);
 
 }
+.app-body {
+  margin-top: 100px;
+}
