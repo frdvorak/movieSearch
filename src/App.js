@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import MovieRow from './MovieRow.js';
 
 class App extends Component {
   constructor(props){
     super(props);
-    console.log('This is my initializer!');
-    
-
+    this.state = {};
+    /*
     const movies = [
       {id: 0, title: 'Avengers', overview: 'asdas ahsd kfjojlwf kasdja'},
       {id: 1, title: 'Grease', overview: 'asdas ahsd kfjojlwf kasdja'},
@@ -16,28 +16,20 @@ class App extends Component {
 
     var movieRows = [];
     movies.forEach((movie)=> {
-      const movieRow = <table key={movie.id}>
-        <tbody>
-          <tr>
-            <td>
-              <img src="" width='80' alt="poster"/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              {movie.title}
-              <p>{movie.overview}</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      const movieRow = <MovieRow movie={movie} />
       movieRows.push(movieRow)
     })
 
     this.state = {rows: movieRows}
+    */
+
+   this.performSearch();
+
   }
 
-  
+  performSearch(){
+    console.log('Perform search using movie DB');
+  }
 
   render() {
     return (
