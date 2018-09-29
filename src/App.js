@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <table  className='titleBar'>
+          <tbody>
+            <tr>
+              <td>
+                <img width="70" src="camera.svg" alt='logo'/>
+              </td>
+              <td>
+                <h1>MoviesDB Search</h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      <input className="main-input" placeholder="Enter search term"></input>
+
       </div>
     );
   }

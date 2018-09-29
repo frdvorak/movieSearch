@@ -26,3 +26,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.titleBar {
+  background-color: #fff;
+  display: block;
+  color: #000;
+  padding-left: 16px;
+
+}
+.main-input {
+  font-size: 24px;
+  display: block;
+  width: 95%;
+  padding: 8px 0px 8px 16px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
