@@ -10,10 +10,10 @@ class MovieRow extends Component {
         return ( 
             <div className='movie-table'>
                 <div className='table-picture'>
-                    <img src={this.props.movie.poster_src} width='200' alt="poster"/>
+                    <img src={this.props.movie.poster_src} alt="poster"/>
                 </div>
                 <div className='table-content'>
-                    {this.props.movie.title}
+                    <h3>{this.props.movie.title}</h3>
                     <p>{this.props.movie.overview}</p>
                     <input type="button" onClick={this.viewMovie.bind(this)} value="View"/>
             </div>

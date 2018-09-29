@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: Verdana;
+  background-color: #EFEFEF;
+  color: #192930;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0; padding: 0;
 }
 
 .App-logo {
@@ -11,7 +18,7 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  
 }
 
 .App-title {
@@ -27,12 +34,16 @@
   to { transform: rotate(360deg); }
 }
 
-.titleBar {
-  background-color: #fff;
-  display: block;
-  color: #000;
-  padding-left: 16px;
+.app-body {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
 
+.titleBar {
+  display: block;
+  padding-left: 16px;
 }
 .main-input {
   font-size: 24px;
@@ -41,20 +52,83 @@
   padding: 8px 0px 8px 16px;
   position: relative;
   margin: auto;
-  
-  
-
+  background: #dae5db;  /* fallback for old browsers */
+  border: 0px solid black;
+  outline: 0px solid black;
 }
-.app-body {
-  margin-top: 50px;
+.main-input:focus {
+  border: 0px solid black;
+  outline: 0px solid black;
 }
 
 .movie-table {
-  background: blue;
-  border: 4px solid red;
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: auto auto;
-  width: 90%;
+  width: 99%;
   margin: auto;
+  margin-bottom: 0.2em;
+  grid-gap: 0.2em;
+}
+.table-picture {
+  overflow: hidden;
+  width: 185px;
+  height: 278px;
+  
+}
+.table-picture img{
+  
+}
+.table-content {
+  display: grid;
+  grid-template-rows: auto auto 30px;
+  padding: 15px;
+  padding-top: 0px;
+  background: #62a5c1;
+  border-radius: 0 10px 10px 0px;
+  background: #abb7bc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5d8596, #abb7bc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5d8596, #abb7bc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 263px;
+}
+.table-content h3{
+
+  font-size: 20px;
+  position: relative;
+  top: 0px; left: 0;
+  text-align: right;
+  padding-right: 10px;
+  margin: 5px;
+  text-shadow: 5px 5px 45px black;
+}
+.table-content p{
+  font-size: 14px;
+  position: relative;
+  top: 0px; left: 0;
+  text-align: left;
+}
+.table-content input {
+  width: 100px;
+  height: 30px;
+  border: 0px solid black;
+  background-color:#142228; 
+  color: #dae5db;
+  border-radius: 5px;
+}
+/***********Large styles********************/
+@media (min-width: 1300px){
+  .app-body {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
+  .movie-table {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 10px;
+    grid-gap: 0.5em;
+  }
 }
