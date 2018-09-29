@@ -1,5 +1,4 @@
-Movie Search
-React app that allows you to search through movie titles in MovieDB API. React + jQuery(used for Ajax call), custom CSS styles, responsive.
+React app that allows user to search through movie titles in MovieDB API. React + jQuery(used for Ajax call), custom CSS styles, responsive.
 
 
 ![movie_search2](https://user-images.githubusercontent.com/40566364/46246685-005eed80-c402-11e8-93fc-421517904108.jpg)
