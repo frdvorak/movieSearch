@@ -79,7 +79,7 @@ class App extends Component {
       <input onChange={this.searchChangeHandler.bind(this)} className="main-input" placeholder="Enter search term"/>
       
       <div className='app-body'>
-        {this.state.rows}
+      {this.state.rows}
       </div>
       </div>
     );
