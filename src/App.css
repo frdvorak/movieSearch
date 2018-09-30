@@ -76,7 +76,8 @@
   
 }
 .table-picture img{
-  
+  width: 185px;
+  height: 278px;
 }
 .table-content {
   display: grid;
@@ -130,5 +131,11 @@
     margin: auto;
     margin-bottom: 10px;
     grid-gap: 0.5em;
+  }
+  .table-picture {
+    overflow: hidden;
+    width: 185px;
+    height: 278px;
+    
   }
 }
