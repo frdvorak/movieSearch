@@ -7,25 +7,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {};
-    /*
-    const movies = [
-      {id: 0, title: 'Avengers', overview: 'asdas ahsd kfjojlwf kasdja'},
-      {id: 1, title: 'Grease', overview: 'asdas ahsd kfjojlwf kasdja'},
-      {id: 2, title: 'Lalaland', overview: 'asdas ahsd kfjojlwf kasdja'},
-      {id: 3, title: 'Terminator', overview: 'asdas ahsd kfjojlwf kasdja'},
-    ]
-
-    var movieRows = [];
-    movies.forEach((movie)=> {
-      const movieRow = <MovieRow movie={movie} />
-      movieRows.push(movieRow)
-    })
-
-    this.state = {rows: movieRows}
-    */
-
-   this.performSearch("avengers");
-
+    this.performSearch("avengers");
   }
 
   performSearch(searchTerm){
@@ -64,23 +46,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <table  className='titleBar'>
-          <tbody>
-            <tr>
-              <td>
+        <div className='titleBar'>
+          
                 <img width="70" src="camera.svg" alt='logo'/>
-              </td>
-              <td>
+              
+              
                 <h1>MoviesDB Search</h1>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      <input onChange={this.searchChangeHandler.bind(this)} className="main-input" placeholder="Enter search term"/>
+        </div>
+        <input onChange={this.searchChangeHandler.bind(this)} className="main-input" placeholder="Enter search term..."/>
       
-      <div className='app-body'>
-      {this.state.rows}
-      </div>
+        <div className='app-body container-fluid '>
+          <div className="row">
+          {this.state.rows}
+          </div>
+        </div>
       </div>
     );
   }
