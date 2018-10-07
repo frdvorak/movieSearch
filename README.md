@@ -2,6 +2,7 @@
 React app that allows user to search through movie titles in MovieDB API. React + jQuery(used for Ajax call), Bootstrap CSS styles, responsive.
 
 ![movie_db2](https://user-images.githubusercontent.com/40566364/46582621-a7b2d480-ca41-11e8-9883-299349e08b14.jpg)
+
 ![movie_db1](https://user-images.githubusercontent.com/40566364/46582622-a8e40180-ca41-11e8-94c4-5fafca19e4ae.jpg)
 
 
