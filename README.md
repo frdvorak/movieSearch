@@ -2,7 +2,7 @@ React app that allows users to search through movies based on a title, fully res
 
 Live DEMO: https://frdvorak.github.io/movie_search/
 
--- React, jQuery(used for Ajax call), Bootstrap CSS styles, MovieDB API
+-- React, jQuery(used for Ajax call), Bootstrap, MovieDB API
 
 ![movie_db2](https://user-images.githubusercontent.com/40566364/46582621-a7b2d480-ca41-11e8-9883-299349e08b14.jpg)
 
