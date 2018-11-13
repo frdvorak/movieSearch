@@ -52,6 +52,7 @@ class App extends Component {
               
               
                 <h1>MoviesDB Search</h1>
+                <p>Search for your favourite movies</p>
         </div>
         <input onChange={this.searchChangeHandler.bind(this)} className="main-input" placeholder="Enter search term..."/>
       
